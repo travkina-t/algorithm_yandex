@@ -10,7 +10,8 @@ rl.on('line', (str) => {
     numbers.push(...str.split(' '));
 }). on('close', ()=> {
     for (let i=0; i<numbers.length; i++) {
-        let magazL, magazR;
+        let magazL;
+        let magazR;
         if(numbers[i]==='1') {
             for(let j=i-1; j>=0;j--) {
                 if(numbers[j]==='2') {
